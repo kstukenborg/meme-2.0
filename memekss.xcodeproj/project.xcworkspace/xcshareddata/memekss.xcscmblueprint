@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA3628B555A0C75CCB52714F38DCE766B677E5DC",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "29207EDFD95502DC8D35C6F82A07F1C57A697771",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "202E04058C81A5BD465606815164289AD7069563" : 0,
-    "BA3628B555A0C75CCB52714F38DCE766B677E5DC" : 0
+    "BA3628B555A0C75CCB52714F38DCE766B677E5DC" : 0,
+    "29207EDFD95502DC8D35C6F82A07F1C57A697771" : 0,
+    "202E04058C81A5BD465606815164289AD7069563" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F1A0083C-1091-4839-AD4E-93104335ADF5",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "202E04058C81A5BD465606815164289AD7069563" : "memekss\/meme%201\/",
-    "BA3628B555A0C75CCB52714F38DCE766B677E5DC" : "memekss\/"
+    "BA3628B555A0C75CCB52714F38DCE766B677E5DC" : "memekss\/",
+    "29207EDFD95502DC8D35C6F82A07F1C57A697771" : "reviewedMemekss\/",
+    "202E04058C81A5BD465606815164289AD7069563" : "memekss\/meme%201\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "memekss",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kstukenborg\/meme-1.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "202E04058C81A5BD465606815164289AD7069563"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kstukenborg\/meme-2.0.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "29207EDFD95502DC8D35C6F82A07F1C57A697771"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kstukenborg\/memekss1.git",

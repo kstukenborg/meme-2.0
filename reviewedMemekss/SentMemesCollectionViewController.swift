@@ -25,13 +25,23 @@ class SentMemesCollectionViewController : UICollectionViewController {
         let space: CGFloat = 3.0
         let dimension = (self.view.frame.size.width - (2*space)) / 3.0
         let height = (self.view.frame.size.height - ( 2 * space)) / 3.0
-        flowLayout.minimumInteritemSpacing = space
+       flowLayout.minimumInteritemSpacing = space
         flowLayout.minimumLineSpacing = space
         flowLayout.itemSize = CGSizeMake(dimension, height)
         
     }
    
     override func viewDidAppear(animated: Bool) {
+        //reset layout if needed because of change in portrait
+        // or landscape mode
+        
+       // let frameSize = collectionView?.frame.size
+       // let shorterSide = min(frameSize!.height, frameSize!.width)
+       // let dimension = shorterSide / 3
+       // let height = (self.view.frame.size.height - ( 2 * 3.0)) / 3.0
+       // flowLayout.itemSize = CGSizeMake(dimension, height)
+
+        //Then you can set the dimensions of the cell to be, say, 1/3 or 1/4 of the shorter side minus a few points for padding. That should give you a reasonable number of cells in your view.
         collectionView?.reloadData()
         navigationController?.navigationBarHidden = false
 
@@ -47,6 +57,7 @@ class SentMemesCollectionViewController : UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SentMemesViewCell", forIndexPath: indexPath) as! SentMemesViewCell
         let meme = memes[indexPath.item]
         let imageView = UIImageView(image: meme.memedImage)
+        imageView.contentMode = .ScaleAspectFit
         cell.backgroundView = imageView
         return cell
     }
