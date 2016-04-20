@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+// This class contains the detail information for the sent memes.
 
 class MemeDetailViewController : UIViewController {
     
@@ -15,19 +16,16 @@ class MemeDetailViewController : UIViewController {
     
     @IBOutlet weak var memeImage: UIImageView!
     
-    @IBOutlet weak var topTextField: UITextField!
-    @IBOutlet weak var bottomTextField: UITextField!
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.memeImage!.image = displayMeme.memedImage
-        
+        navigationController?.toolbarHidden = true
+        tabBarController?.tabBar.hidden = true
+        memeImage!.image = displayMeme.memedImage
             }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        self.tabBarController?.tabBar.hidden = false
+        tabBarController?.tabBar.hidden = false
     }
     
     
