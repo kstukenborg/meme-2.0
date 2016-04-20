@@ -8,27 +8,38 @@
 
 import Foundation
 import UIKit
-
+import Darwin
+//This class handles the sent memes that are stored in a collection grid.
 class SentMemesCollectionViewController : UICollectionViewController {
     
-   
-   // let allMemes = [Meme]()
-    //let allMemes = Meme.allMemes
     var memes: [Meme] {
         return (UIApplication.sharedApplication().delegate as! AppDelegate).memes
     }
+    @IBAction func exitApplicaton(sender: AnyObject) {
+        exit(0)
+    }
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let space: CGFloat = 3.0
+        let dimension = (self.view.frame.size.width - (2*space)) / 3.0
+        let height = (self.view.frame.size.height - ( 2 * space)) / 3.0
+        flowLayout.minimumInteritemSpacing = space
+        flowLayout.minimumLineSpacing = space
+        flowLayout.itemSize = CGSizeMake(dimension, height)
+        
+    }
    
     override func viewDidAppear(animated: Bool) {
-       print("In viewDidAppear of SentMemesCollectoinViewController")
-        self.collectionView?.reloadData()
-        print("memes.count is \(memes.count)")
+        collectionView?.reloadData()
+        navigationController?.navigationBarHidden = false
 
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.hidden = false
-        print (memes)
+        tabBarController?.tabBar.hidden = false
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -37,19 +48,17 @@ class SentMemesCollectionViewController : UICollectionViewController {
         let meme = memes[indexPath.item]
         let imageView = UIImageView(image: meme.memedImage)
         cell.backgroundView = imageView
-        
         return cell
     }
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print ("memes.count is  \(memes.count)")
         return memes.count
     }
     
        override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let detailController = self.storyboard?.instantiateViewControllerWithIdentifier("MemeDetailViewController") as! MemeDetailViewController
         detailController.displayMeme = memes[indexPath.row]
-        self.navigationController!.pushViewController(detailController, animated: true)
+        navigationController!.pushViewController(detailController, animated: true)
     }
 
 
