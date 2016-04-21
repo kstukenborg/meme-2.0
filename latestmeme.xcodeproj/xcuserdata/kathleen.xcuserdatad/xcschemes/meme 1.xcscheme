@@ -17,7 +17,7 @@
                BlueprintIdentifier = "147274F51C3ECB1D000729F0"
                BuildableName = "memekss.app"
                BlueprintName = "memekss"
-               ReferencedContainer = "container:memekss.xcodeproj">
+               ReferencedContainer = "container:latestmeme.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "147274F51C3ECB1D000729F0"
             BuildableName = "memekss.app"
             BlueprintName = "memekss"
-            ReferencedContainer = "container:memekss.xcodeproj">
+            ReferencedContainer = "container:latestmeme.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "147274F51C3ECB1D000729F0"
             BuildableName = "memekss.app"
             BlueprintName = "memekss"
-            ReferencedContainer = "container:memekss.xcodeproj">
+            ReferencedContainer = "container:latestmeme.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "147274F51C3ECB1D000729F0"
             BuildableName = "memekss.app"
             BlueprintName = "memekss"
-            ReferencedContainer = "container:memekss.xcodeproj">
+            ReferencedContainer = "container:latestmeme.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

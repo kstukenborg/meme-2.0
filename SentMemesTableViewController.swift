@@ -43,7 +43,7 @@ class SentMemesTableViewController: UITableViewController {
         
         // Set the name and image
         cell.imageView?.image = meme.memedImage
-        cell.textLabel?.text = meme.topText + " " + meme.bottomText        
+        cell.textLabel?.text = meme.topText + " " + meme.bottomText
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
